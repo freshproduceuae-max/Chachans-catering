@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================= -->
+  <!--  EDIT THESE FOR SEO (shows in Google & when shared on chat)   -->
+  <!-- ============================================================= -->
+  <title>Saffron &amp; Sage Catering — Weddings, Majlis, Festivals &amp; More</title>
+  <meta name="description" content="Saffron & Sage Catering brings fresh, home-style food to your event — weddings, majlis, festivals, church gatherings and more. View our menu and request a free quote on WhatsApp." />
+  <meta name="theme-color" content="#f2681f" />
+
+  <meta property="og:title" content="Saffron & Sage Catering — Weddings, Majlis, Festivals & More" />
+  <meta property="og:description" content="Fresh, home-style catering made with love. Request a free quote on WhatsApp." />
+  <meta property="og:type" content="business.business" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="brand">
+        <span class="brand__mark">S&amp;S</span>
+        <span class="brand__name" data-biz-name>Saffron &amp; Sage Catering</span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#about">Our Story</a>
+        <a href="#events">Events</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#book" class="btn btn--sm btn--primary">Get a quote</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="home">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="container hero__inner reveal">
+      <p class="eyebrow">Catering · Weddings · Majlis · Festivals · Church</p>
+      <h1 class="hero__title" data-biz-name>Saffron &amp; Sage Catering</h1>
+      <p class="hero__tagline" data-tagline>Fresh, home-style food brought to your celebration.</p>
+      <div class="hero__cta">
+        <a href="#events" class="btn btn--primary btn--lg">Get a free quote</a>
+        <a href="#menu" class="btn btn--ghost btn--lg">See the menu</a>
+        <a href="#" data-wa class="btn btn--wa btn--lg">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.16c-.25.7-1.44 1.33-1.98 1.38-.53.06-1.02.24-3.43-.72-2.9-1.14-4.74-4.1-4.88-4.29-.14-.19-1.17-1.55-1.17-2.96s.74-2.1 1-2.39c.25-.28.55-.35.73-.35.18 0 .37 0 .53.01.17.01.4-.06.62.48.25.6.84 2.06.91 2.21.07.14.12.31.02.5-.1.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.22 1.37.28.14.44.12.6-.07.17-.19.7-.81.88-1.09.18-.28.37-.23.62-.14.25.09 1.6.75 1.87.89.28.14.46.21.53.32.07.12.07.68-.18 1.38Z"/></svg>
+          WhatsApp us
+        </a>
+      </div>
+      <ul class="hero__facts">
+        <li><strong data-availability>Catering 7 days a week</strong></li>
+        <li><strong>★ 4.9</strong> from happy clients</li>
+        <li><strong>Any headcount · Delivered &amp; set up</strong></li>
+      </ul>
+    </div>
+    <a href="#events" class="hero__scroll" aria-label="Scroll down">↓</a>
+  </section>
+
+  <!-- ================= EVENTS (clickable picture cards) ================= -->
+  <section class="section" id="events">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Events we cater</p>
+        <h2>What are we celebrating?</h2>
+        <p class="section__sub">Tap your occasion to see how simple it is to get started.</p>
+      </div>
+      <div class="events" id="eventsGrid"><!-- cards injected from config.js --></div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT / STORY ================= -->
+  <section class="section section--tint" id="about">
+    <div class="container about">
+      <div class="about__media reveal">
+        <div class="ph ph--tall"><span>Add a warm photo of the family / kitchen<br /><code>images/story.jpg</code></span></div>
+      </div>
+      <div class="about__text reveal">
+        <p class="eyebrow">Our Story</p>
+        <h2>Catering that tastes like home.</h2>
+        <div data-story><!-- paragraphs injected from config.js --></div>
+        <div class="about__stats" data-stats><!-- stats injected from config.js --></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MENU ================= -->
+  <section class="section" id="menu">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Catering Menu</p>
+        <h2>Build your perfect spread</h2>
+        <p class="section__sub">A taste of what we cook — mix and match into a buffet, platters or a set menu.</p>
+      </div>
+      <div class="menu" id="menuGrid"><!-- menu injected from config.js --></div>
+      <p class="menu__note reveal" data-menu-note></p>
+      <div class="section__foot reveal">
+        <a href="#book" class="btn btn--primary">Request a quote</a>
+        <a href="menu.pdf" class="btn btn--ghost">Download full menu (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GALLERY ================= -->
+  <section class="section section--tint" id="gallery">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Gallery</p>
+        <h2>Come hungry, leave happy</h2>
+      </div>
+      <div class="gallery" id="galleryGrid"><!-- gallery injected from config.js --></div>
+    </div>
+  </section>
+
+  <!-- ================= REQUEST A QUOTE ================= -->
+  <section class="section" id="book">
+    <div class="container book">
+      <div class="book__info reveal">
+        <p class="eyebrow">Request a Quote</p>
+        <h2>Tell us about your event</h2>
+        <p>Fill in the details and hit <strong>Send</strong>. It opens WhatsApp with your request ready to go — we'll reply with a tailored menu and quote, usually within a few hours.</p>
+        <ul class="book__contact" id="visit">
+          <li><span class="ic">📍</span><div><strong>Where we cater</strong><br /><span data-area>Abu Dhabi, Dubai &amp; across the UAE</span></div></li>
+          <li><span class="ic">📞</span><div><strong>Call or WhatsApp</strong><br /><a data-tel href="#">+971 50 000 0000</a></div></li>
+          <li><span class="ic">🕑</span><div><strong>Availability</strong><br /><span data-availability>Catering 7 days a week · Book ahead</span></div></li>
+        </ul>
+        <div class="book__socials">
+          <a href="#" data-ig aria-label="Instagram">Instagram</a>
+          <a href="#" data-wa aria-label="WhatsApp">WhatsApp</a>
+        </div>
+      </div>
+
+      <form class="book__form reveal" id="bookForm">
+        <div class="field">
+          <label for="f-name">Your name</label>
+          <input id="f-name" name="name" type="text" required placeholder="e.g. Aisha" />
+        </div>
+        <div class="field">
+          <label for="f-phone">Phone number</label>
+          <input id="f-phone" name="phone" type="tel" required placeholder="+971 …" />
+        </div>
+        <div class="field field--row">
+          <div>
+            <label for="f-event">Event type</label>
+            <select id="f-event" name="event" required><!-- options injected from config.js --></select>
+          </div>
+          <div>
+            <label for="f-date">Event date</label>
+            <input id="f-date" name="date" type="date" required />
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-guests">Approx. number of guests</label>
+          <select id="f-guests" name="guests" required><!-- options injected from config.js --></select>
+        </div>
+        <div class="field">
+          <label for="f-notes">Tell us more <span class="muted">(optional)</span></label>
+          <textarea id="f-notes" name="notes" rows="2" placeholder="Location, cuisine, dietary needs, budget…"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--lg btn--block">Send quote request on WhatsApp</button>
+        <p class="form__fallback">No WhatsApp? <a data-tel href="#">Call us instead →</a></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <span class="brand__name" data-biz-name>Saffron &amp; Sage Catering</span>
+        <p class="footer__tag">Fresh, home-style catering made with love.</p>
+      </div>
+      <nav class="footer__links">
+        <a href="#events">Events</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#book">Get a quote</a>
+      </nav>
+      <p class="footer__copy">© <span id="year"></span> <span data-biz-name>Saffron &amp; Sage Catering</span>. Made with ♥ for family.</p>
+    </div>
+  </footer>
+
+  <!-- ================= STEPS POPUP (opens when an event card is tapped) ================= -->
+  <div class="modal" id="stepsModal" aria-hidden="true">
+    <div class="modal__overlay" data-close></div>
+    <div class="modal__box reveal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" data-close aria-label="Close">×</button>
+      <p class="eyebrow" data-modal-emoji>✨</p>
+      <h3 id="modalTitle" class="modal__title">Catering for <span data-modal-event>your event</span></h3>
+      <p class="modal__sub">Here's how simple it is — three easy steps:</p>
+      <ol class="steps" id="stepsList"><!-- steps injected from config.js --></ol>
+      <a href="#book" class="btn btn--primary btn--lg btn--block" id="modalCta">Start my quote →</a>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp -->
+  <a href="#" data-wa class="fab" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.16c-.25.7-1.44 1.33-1.98 1.38-.53.06-1.02.24-3.43-.72-2.9-1.14-4.74-4.1-4.88-4.29-.14-.19-1.17-1.55-1.17-2.96s.74-2.1 1-2.39c.25-.28.55-.35.73-.35.18 0 .37 0 .53.01.17.01.4-.06.62.48.25.6.84 2.06.91 2.21.07.14.12.31.02.5-.1.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.22 1.37.28.14.44.12.6-.07.17-.19.7-.81.88-1.09.18-.28.37-.23.62-.14.25.09 1.6.75 1.87.89.28.14.46.21.53.32.07.12.07.68-.18 1.38Z"/></svg>
+  </a>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

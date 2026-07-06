@@ -1,0 +1,4 @@
+preview-*.png
+.DS_Store
+shot*.cjs
+*.mjs
